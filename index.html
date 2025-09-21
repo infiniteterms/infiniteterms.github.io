@@ -1,0 +1,45 @@
+<script>
+  window.addEventListener('load', function() {
+    const pageHeight = document.documentElement.scrollHeight;
+    const viewportHeight = window.innerHeight;
+    const middleOfPage = (pageHeight - viewportHeight) / 2;
+
+    window.scrollTo({
+      top: middleOfPage,
+      behavior: 'instant'
+    });
+  });
+</script>
+<style>
+  body {
+    overflow: hidden;
+  }
+</style>
+
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Infinite Terms of Service</title>
+    <iframe src="https://infiniteterms.on.websim.com/" width="100%" height="100%" title="Terms of Sevice"></iframe>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corner Rectangle above Embed</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 200vh; /* To demonstrate scrolling */
+            background-color: lightgray;
+        }
+
+        .white-rectangle {
+            position: fixed; /* Fixed position relative to the viewport */
+            top: 1px; /* Distance from the top edge */
+            right: 20px; /* Distance from the right edge */
+            width: 100px;
+            height: 10px;
+            background-color: white;
+            border: 1px solid #ccc;
+            z-index: 100; /* Ensure it's above other elements */
+        }
+<style>
+  body {
